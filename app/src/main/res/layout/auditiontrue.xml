@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/main">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:layout_width="17dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/back"
+            android:text="Listening"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:text="cucumber" />
+
+        <TextView
+            android:id="@+id/textPronunciation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_below="@+id/textWord"
+            android:textColor="@color/black"
+            android:text="[ 'kju:kʌmbə ]" />
+
+        <TextView
+            android:id="@+id/textHint"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textPronunciation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            android:text="Please press button and say this word. Our service will check your pronunciation"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textHint2"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textHint"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Your result "
+            android:textColor="#656872"
+            android:textSize="15sp" />
+
+        <android.widget.EditText
+            android:id="@+id/editTextPronunciation"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/textHint2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/textinp"
+            android:ems="10"
+            android:inputType="none"
+            android:paddingLeft="20dp"
+            android:text="cucumber"
+            android:textColor="#5BA890"
+            android:textColorHint="#5BA890"
+            android:textSize="15sp" />
+
+        <android.widget.Button
+            android:id="@+id/buttonNext"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/editTextPronunciation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/nextbutton"
+            android:text="Yay! Go next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
